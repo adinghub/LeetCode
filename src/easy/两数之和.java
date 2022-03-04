@@ -28,4 +28,5 @@ public class 两数之和 {
         }
         throw new IllegalArgumentException("No two sum solution");
     }
+
 }
