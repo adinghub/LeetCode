@@ -27,7 +27,7 @@ package easy;
 
 public class 最长公共前缀 {
     public static void main(String[] args) {
-        System.out.println(new Solution().longestCommonPrefix(new String[]{"flower","flow","flight"}));
+        System.out.println(new Solution().longestCommonPrefix(new String[]{"ab","a"}));
     }
     static class Solution {
         public String longestCommonPrefix(String[] strs) {
@@ -46,6 +46,7 @@ public class 最长公共前缀 {
                         break;
                     }
                 }
+                // 每两个字符串循环完记录前缀
                 str = str.substring(0, j);
             }
             return str;
