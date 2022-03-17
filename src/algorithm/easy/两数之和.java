@@ -1,4 +1,4 @@
-package easy;
+package algorithm.easy;
 
 /**
  * @author Qidong Ding

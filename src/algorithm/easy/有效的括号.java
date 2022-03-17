@@ -1,4 +1,4 @@
-package easy;
+package algorithm.easy;
 
 import java.util.Stack;
 
