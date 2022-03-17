@@ -38,12 +38,14 @@ public class 合并两个有序链表 {
 
     static class Solution {
         public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+            // 当有 一个链表为 null 的时候 返回 另一个链表
             if (list1 == null) {
                 return list2;
             }
             if (list2 == null) {
                 return list1;
             }
+            // 判断 如果 链表1 小于 链表2 那么 链表1 的下一个节点指向的是 链表1的下一个节点的值 和 链表2 的值进行比较后 小的值，反之 则链表2的下一个节点指向 链表2的下一个节点的值 和 链表1 的值进行比较后 小的值， 重复此过程
             if (list1.val < list2.val) {
                 list1.next = mergeTwoLists(list1.next, list2);
                 return list1;
