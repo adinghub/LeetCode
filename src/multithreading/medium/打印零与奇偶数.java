@@ -80,7 +80,7 @@ public class 打印零与奇偶数 {
         }
 
         public void odd(IntConsumer printNumber) throws InterruptedException {
-            for (int i = 1; i <= n; i++) {
+            for (int i = 1; i <= n; i+=2) {
                 odd.acquire();
                 printNumber.accept(i);
                 zero.release();
